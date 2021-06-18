@@ -1,0 +1,420 @@
+/*Personalização do Cabeçalho*/
+#cabeçalho{
+    background-color: #bd0000c7;
+    width: 100%;
+}
+#logo{
+    max-width: 100%;
+}
+#nav_menu{
+    max-width: 100%;
+    position: relative;       
+       
+}
+#menu{
+    position: relative;
+    display: none; 
+    left: 10%;   
+    background-color: #f15353c7 ; 
+    margin-bottom: 50px;   
+}
+#item{
+    font-size: 100%;
+}
+#link_item{
+    text-decoration: none;    
+    color: white;
+    font-weight: 700;
+}
+#link_item:hover{
+    color: #6d1212e0;
+}
+/*ícones do menu personalização base*/
+.menu_icon{
+    
+    position: relative; 
+    display: flex;   
+    left: 70%;    
+    font-size: 50px;
+    color: white; 
+    line-height: 60px;
+    z-index: 999;
+    
+}
+/*Mudança de ícones configuração base*/
+#menu_mobile:checked ~ label i:nth-child(2){
+    display: block;
+}
+
+#menu_mobile:checked ~ label i:first-child{
+    display: none;
+}
+
+#menu_mobile:not(checked) ~ label i:nth-child(2){
+    display: none;
+}
+
+#menu_mobile:not(checked) ~ label i:first-child{
+    display: block;
+}
+/*Escondendo checkbox*/
+#menu_mobile{
+    display: none;
+}
+/*Mostrando menu quando checkbox está ativa*/
+#menu_mobile:checked ~ ul{
+    display: block;    
+    width: 80%;
+    z-index: 998;
+}
+
+/*Fim da Personalização do Cabeçalho*/
+
+
+/*Personalização do Conteúdo*/
+
+/*Personalização da Seção Lançamentos*/
+#lancamentos{
+   background-color: #e78585f6;
+   width: 100%; 
+   height: 400px; 
+}
+
+.secao_principal{
+    text-align: center;
+    color: black;
+    max-width: 100%;    
+    margin: 0px;
+    margin-bottom: 20px;
+    
+}
+
+.trailler{
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;  
+    height: 100%;
+}
+.carousel-indicators{
+    position: relative;
+    
+}
+.titulo_filme{
+    font-size: 150%; 
+    text-align: center;   
+}
+.sinopse{
+    font-size: 100%;
+    display: none;
+}
+
+/*Fim Personalização da Seção Lançamentos*/
+
+/*Personalização da Seção Em destaque*/
+.titulo_secao{
+    text-align: left;
+    color: black;
+    max-width: 100%;    
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#filtro_movies{
+    position: relative;
+    left: 60%;
+    margin-bottom: 20px;       
+}
+#card_movie{
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#card_movie .card-title{
+    text-align: center;
+    font-size: 150%;
+}
+#cartaz{
+    width: 100%;
+    height: 100%;    
+    padding: 10px;
+}
+
+.atualiza{
+    position: relative;
+    left: 20%;
+    background-color: #f15353c7;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*Escondendo os dois últimos cartazes para mobiles*/
+#cartaz3{
+    display: none;
+}
+#cartaz4{
+    display: none;
+}
+/*Fim Personalização da Seção Em destaque*/
+
+/*Personalização da Seção Avaliações*/
+#avaliacao{
+    margin-bottom: 20px;
+}
+.autor{
+    font-size: 120%;
+}
+#card_avaliacao{
+    height: 100%;
+}
+#card_avaliacao .card-title{
+    font-size: 160%;    
+}
+/*Escondendo a última avaliação para mobiles*/
+#avaliacao3{
+    display: none;
+}
+/*Fim Personalização da Seção Avaliações*/
+
+/*Personalização da Seção Entrevistas & Make in off*/
+#entrevistas{
+    background-color: #e78585f6;
+    max-width: 100%;
+}
+#card_entrevista{
+    background-color: #df303081;
+    margin: 10px;
+    height: 100%;
+}
+#card_entrevista .card-title{
+    font-size: 150%;
+}
+.entrevista{
+    max-width: 100%;
+    padding: 10px;
+}
+#text_entrevista{
+    color: white;
+    margin: 10px;
+}
+/*Fim Personalização da Seção Entrevistas & Make in off*/
+
+/*Personalização da Seção Novidades*/
+#space_novidades{
+    margin-bottom: 20px;
+}
+#novidade{
+    max-width: 100%;
+    max-height: 200px;
+    position: relative;
+    top: 10%;
+    padding-bottom: 20px;  
+            
+}
+#card_novidades{   
+    background-color: #e7bfbfd0;
+    padding: 5px;    
+}
+#card_novidades .card-title {
+    font-size: 120%;
+}
+#card_novidades .card-text{
+    font-size: 80%;
+}
+/*Fim Personalização da Seção Novidades*/
+
+/*Personalização da Seção Editorial*/
+#sub_editorial{
+    font-size: 130%;
+}
+.icons{
+    font-size: 200%;
+}
+/*Fim Personalização da Seção Editorial*/
+
+/*Fim Personalização do Conteúdo*/
+
+
+/*Personalização do Rodapé*/
+footer{
+    display: block;
+    background-color:  #bd0000c7;
+    color: white;
+    text-align: center;
+    position: static;        
+}
+#logo_footer{
+    max-width: 100%;
+    display: none;
+}
+/*Fim Personalização do Rodapé*/
+
+
+/*Mídia Queries: Ajustes para determinados tamanhos de tela*/
+@media screen and (min-width: 1023px) {
+    /*Ajustes do cabeçalho*/
+    .menu_icon{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        left: 0%;   
+        margin-bottom: 0px;
+    }
+    #nav_menu{
+        top: 40%;
+    }
+    /*Fim dos Ajustes do cabeçalho*/
+
+
+    /*Ajustes do conteúdo*/
+
+    /*Ajustes da seção lançamentos*/
+    #lancamentos{
+        height: 500px;
+    }
+    .titulo_filme{
+        display: block;
+        font-size: 200%;
+    }
+    .sinopse{
+        display: block;
+    }  
+    /*Fim dos Ajustes da seção lançamentos*/
+
+    /*Ajustes da seção em destaque*/
+    #cartaz3{
+        display: flex;
+    }
+    #cartaz4{
+        display: flex;
+    }
+    #card_movie{
+        padding: 0px;
+    }
+    .atualiza{
+        left: 77%;
+        font-size: 120%;        
+    }
+    #filtro_movies{
+        left: 80%;
+        font-size: 150%;
+    }    
+    /*Fim dos Ajustes da seção em destaque*/
+
+    /*Personalização da Seção Avaliações*/
+    #avaliacao3{
+        display: flex;
+    }
+    /*Fim Personalização da Seção Avaliações*/
+
+    /*Fim dos Ajustes do conteúdo*/
+
+    /*Início dos Ajustes do Rotapé*/
+    #logo_footer{
+        display: flex;
+    }
+    /*Fim dos Ajustes do Rotapé*/
+}
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+    /*Ajustes do cabeçalho*/
+    .menu_icon{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        left: 0%;   
+        margin-bottom: 0px;
+    }
+    #nav_menu{
+        top: 20%;
+    }
+    #item{
+        font-size: 100%;
+    }
+    /*Fim dos Ajustes do cabeçalho*/
+
+
+    /*Ajustes do conteúdo*/
+
+    /*Ajustes da seção lançamentos*/
+    #lancamentos{
+        height: 550px;
+    }
+    .titulo_filme{
+        display: block;
+        font-size: 150%;
+    }
+    .sinopse{
+        display: block;
+        font-size: 90%;
+    }   
+    /*Fim dos Ajustes da seção lançamentos*/
+
+    /*Ajustes da seção em destaque*/
+    #cartaz3{
+        display: flex;
+    }
+    #cartaz4{
+        display: flex;
+    }
+    #card_movie{
+        padding: 0px;        
+    }
+    #card_movie .card-title{
+        font-size: 110%;
+    }
+    .atualiza{
+        left: 75%;
+    }
+    #filtro_movies{
+        left: 80%;
+    }
+    /*Fim dos Ajustes da seção em destaque*/
+
+    /*Personalização da Seção Avaliações*/
+    #avaliacao3{
+        display: flex;
+    }
+    #avaliacao .card-title{
+        font-size: 110%;
+    }
+    #avaliacao .card-text{
+        font-size: 85%;
+    }
+    .autor{
+        font-size: 90%;
+    }
+    /*Fim Personalização da Seção Avaliações*/
+
+    /*Personalização da Seção Entrevistas & Make in off*/
+    #card_entrevista .card-text{
+        font-size: 70%;
+    }
+    #card_entrevista .card-title{
+        font-size: 100%;
+    }
+    #card_entrevista{        
+        margin: 0px;       
+    }
+    /*Fim Personalização da Seção Entrevistas & Make in off*/
+
+
+    /*Personalização da Seção Novidades*/
+    #card_novidades .card-text{
+        display: none;
+    }
+    /*Fim Personalização da Seção Novidades*/
+
+    /*Fim dos Ajustes do conteúdo*/
+
+    /*Início dos Ajustes do Rotapé*/
+    #logo_footer{
+        display: flex;
+    }
+    /*Fim dos Ajustes do Rotapé*/
+    
+}
