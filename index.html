@@ -37,20 +37,17 @@
                     <!--Inserindo a lista do menu de fato-->
                     <ul id="menu" class="nav justify-content-center">
                         <li id="item" class="nav-item">
-                            <a id="link_item" class="nav-link" href="#">Lançamentos</a>
+                            <a id="link_item" class="nav-link" href="https://www.themoviedb.org/movie/upcoming">Lançamentos</a>
                         </li>
                         <li id="item" class="nav-item">
-                            <a id="link_item" class="nav-link" href="#">Em Destaque</a>
+                            <a id="link_item" class="nav-link" href="https://www.themoviedb.org/movie">Em Destaque</a>
                         </li>
                         <li id="item" class="nav-item">
-                            <a id="link_item" class="nav-link" href="#">Avaliações</a>
-                        </li>
+                            <a id="link_item" class="nav-link" href="https://www.themoviedb.org/discuss/movies">Avaliações</a>
+                        </li>                        
                         <li id="item" class="nav-item">
-                            <a id="link_item" class="nav-link" href="#">Entrevistas & Makingof</a>
-                        </li>
-                        <li id="item" class="nav-item">
-                            <a id="link_item" class="nav-link" href="#">Novidades</a>
-                        </li>
+                            <a id="link_item" class="nav-link" href="https://www.themoviedb.org/movie/now-playing">Em Cartaz</a>
+                        </li>                                              
                     </ul>
                               
                 </nav>
@@ -81,9 +78,9 @@
                          <!--Primeiro slide do carrosel-->
                          <div class="carousel-item active">
                              <div class="container">
-                                 <div class="row">
+                                 <div id="slide1" class="row">
                                      <div class="col-md-6 col-xsm-12">
-                                        <iframe class="trailler" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5V6heNwvDsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <img class="cartazSlide" src="#" alt="Cartaz filme">
                                      </div>
                                      <div class="col-md-6 col-xsm-12"> 
                                         <div class="container">
@@ -106,9 +103,9 @@
                          <!--Segundo slide do carrosel-->
                          <div class="carousel-item">
                              <div class="container">
-                                 <div class="row">
+                                 <div id="slide2" class="row">
                                      <div class="col-md-6 col-xsm-12">
-                                        <iframe class="trailler" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X-V1jcj2Zt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <img class="cartazSlide" src="#" alt="Cartaz filme">
                                      </div>
                                      <div class="col-md-6 col-xsm-12"> 
                                          <div class="container">
@@ -131,9 +128,9 @@
                          <!--Terceiro slide do carrosel-->
                          <div class="carousel-item">
                             <div class="container">
-                                <div class="row">
+                                <div id="slide3" class="row">
                                     <div class="col-md-6 col-xsm-12">
-                                        <iframe class="trailler" width="560" height="315" src="https://www.youtube-nocookie.com/embed/V2AM7I0TcDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <img class="cartazSlide" src="#" alt="Cartaz filme">
                                     </div>
                                     <div class="col-md-6 col-xsm-12"> 
                                         <div class="container">
@@ -176,46 +173,38 @@
         <!--Início seção Em destaque-->
         <div class="col-12">
             <h1 class="titulo_secao">Em destaque</h1>
-        </div>
-        <div class="col-12">
-            <!--Adicionando caixa de seleção de filtragem-->
-            <select name="genero" id="filtro_movies">
-                <!--O selected indica o que estará selecionado inicialmente-->
-                <option value="geral" selected>Todos</option>
-                <option value="suspense">Suspense</option>
-                <option value="aventura">Aventura</option>
-                <option value="drama">Drama</option>
-                <option value="infantil">Infantil</option>
-            </select>
-        </div>
+        </div>        
         <!--Adicionando os cartazes dos filmes-->        
         <div id="cartaz1" class="col-md-3 col-sm-12">
-            <div id="card_movie" class="card">
-                <img id="cartaz" class="suspense" src="Imagens/Cartazes/Fuja.jpg" alt="Cartaz filme">
+            <div id="card_movie1" class="card_movie">
+                <img class="cartaz" src="Imagens/Cartazes/Fuja.jpg" alt="Cartaz filme">
                 <h2 class="card-title">Fuja</h2>
+                <p class="card-sinopse">Sinopse</p>
             </div>            
         </div>
         <div id="cartaz2" class="col-md-3 col-sm-12">
-            <div id="card_movie" class="card">
-                <img id="cartaz" class="aventura" src="Imagens/Cartazes/Amor e monstros.jpg" alt="Cartaz filme">
+            <div id="card_movie2" class="card_movie">
+                <img class="cartaz" src="Imagens/Cartazes/Amor e monstros.jpg" alt="Cartaz filme">
                 <h2 class="card-title">Amor e Monstros</h2>
+                <p class="card-sinopse">sinopse</p>
             </div>
         </div>
         <div id="cartaz3" class="col-md-3 col-sm-12">
-            <div id="card_movie" class="card">
-                <img id="cartaz" class="infantil aventura" src="Imagens/Cartazes/Raya e o último dragão.jpeg" alt="Cartaz filme">
+            <div id="card_movie3" class="card_movie">
+                <img class="cartaz" src="Imagens/Cartazes/Raya e o último dragão.jpeg" alt="Cartaz filme">
                 <h2 class="card-title">Raya</h2>
+                <p class="card-sinopse">sinopse</p>
             </div>            
         </div>
         <div id="cartaz4" class="col-md-3 col-sm-12">
-            <div id="card_movie" class="card">
-                <img id="cartaz" class="drama" src="Imagens/Cartazes/Radioactive.jpg" alt="Cartaz filme">
+            <div id="card_movie4" class="card_movie">
+                <img class="cartaz" src="Imagens/Cartazes/Radioactive.jpg" alt="Cartaz filme">
                 <h2 class="card-title">Radioactive</h2>
             </div>             
         </div>
         <!--Colocando o botão para ir pra outra página-->
         <div class="col-12">
-            <button class="atualiza" type="submit">Ver mais destaques</button>
+            <button id="btnDestaque" class="atualiza" type="submit">Ver mais destaques</button>
         </div>
         <!--Final seção Em destaque-->
     </section>
@@ -276,47 +265,10 @@
         </div>
         <!--Colocando o botão para ir pra outra página-->
         <div class="col-12">
-            <button class="atualiza" type="submit">Ver mais avaliações</button>
+            <button id="btnAvaliacao" class="atualiza" type="submit">Ver mais avaliações</button>
         </div>
         <!--Fim seção Avaliações-->
-    </section>
-    <section class="row">
-        <!--Início seção Entrevistas & Makeinoff-->
-        <div id="entrevistas" class="col-12">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="titulo_secao">Entrevistas e Make in off</h1>
-                </div>
-                <!--Adicionando cards para as entrevistas-->
-                <div id="entrevista1" class="col-md-4 col-sm-12">
-                    <div id="card_entrevista" class="card">
-                        <iframe class="entrevista" width="560" height="315" src="https://www.youtube.com/embed/LOFagzUclqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2 id="text_entrevista" class="card-title">Resgate | Vídeo de bastidores detalha preparação para filmar cena de ação</h2>
-                        <p id="text_entrevista" class="card-text">Novo filme de Chris Hemsworth na Netflix, Resgate divulgou um novo vídeo que mostra os preparos para as filmagens de uma das mais difíceis cenas de ação do filme. Entre as curiosidades, é revelado que o diretor Sam Hargrave se amarrou em veículos para operar pessoalmente as câmeras – veja acima.</p>
-                    </div>            
-                </div>
-                <div id="entrevista2" class="col-md-4 col-sm-12">
-                    <div id="card_entrevista" class="card">
-                        <iframe class="entrevista" width="560" height="315" src="https://www.youtube.com/embed/zjd3gyEcFv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2 id="text_entrevista" class="card-title">Mortal Kombat revela cenas inéditas em novo vídeo de bastidores</h2>
-                        <p id="text_entrevista" class="card-text">O novo filme de Mortal Kombat ganhou um novo vídeo de bastidores, que se aprofunda nos personagens e apresenta o elenco da adaptação. O featurette, que pode ser conferido acima, traz depoimentos de integrantes como Mehcad Brooks (Jax), Josh Lawson (Kano) e Jessica McNamee (Sonya Blade), além de revelar trechos inéditos do longa, com destaque para os personagens de Kabal, Raiden e Kung Lao. </p>
-                    </div>            
-                </div>
-                <div id="entrevista3" class="col-md-4 col-sm-12">
-                    <div id="card_entrevista" class="card">
-                        <iframe class="entrevista" width="673" height="360" src="https://www.youtube.com/embed/3hSjs2hBa94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h2 id="text_entrevista" class="card-title">Universal Pictures libera vídeo de bastidores das gravações do drama de guerra 1917!</h2>
-                        <p id="text_entrevista" class="card-text">A Universal Pictures liberou um vídeo de bastidores sobre 1917 o drama de guerra com direção de Sam Mendes. A trama do filme se passa em um dos momentos críticos da Primeira Guerra Mundial, onde dois soldados britânicos Schofield (George MacKay) e Blake (Dean-Charles Chapman) recebem uma missão aparentemente impossível. Em uma corrida contra o tempo, os soldados devem cruzar território inimigo e entregar uma mensagem que cessará o ataque brutal de milhares – entre eles, o irmão de Blake.</p>
-                    </div>            
-                </div>
-                <!--Colocando o botão para ir pra outra página-->
-                <div class="col-12">
-                    <button class="atualiza" type="submit">Ver mais entrevistas</button>
-                </div>
-            </div>
-        </div>
-        <!--Fim seção Entrevistas & Make in off-->
-    </section>
+    </section>   
 
     <section class="row">
         <!--Início seção Novidades-->
