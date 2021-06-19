@@ -104,6 +104,11 @@
     margin-left: 150px;
 }
 
+.btn{
+    background-color: #f15353c7;
+    border-style: none;
+}
+
 .secao_principal{
     text-align: center;
     color: black;
